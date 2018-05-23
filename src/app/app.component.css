@@ -1,27 +1,97 @@
+html {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 .container {
   padding: 3rem;
-  height: 5rem;
-  background-color: gray;
-  border-radius: 1rem;
-  width: 30%;
+  background-color: #666699;
+  border-radius: 2rem;
+  width: 50%;
   margin: auto;
   text-align: center;
-
-
+  font-family: Helvetica;
+  border: 5px solid #000066;
+  overflow: hidden;
 }
-input {
-  width: 10rem;
-  padding: 0.5rem;
-}
-span {
-  width: 10rem;
-  background: white;
-
-}
-
-#score {
-  width: 11rem;
-  background-color: white;
+currencySelectors {
   display: inline-block;
+}
+
+p {
+  padding: 0.2rem;
+  margin: 0.2rem;
+  font-weight: 300;
+  color: #000066;
+}
+
+.selector {
+  width: 50%;
+  display: inline-block;
+}
+
+select {
   padding: 0.5rem;
+  width: 70%;
+  margin: auto;
+  background-color: #add8e6;
+  color: #000066;
+  border: 1px solid #000066;
+}
+
+.results {
+  margin-top: 2rem;
+  position: relative;
+
+}
+
+.selector1 {
+  width: 30%;
+  }
+
+
+input {
+  padding: 0.5rem;
+  background-color: #add8e6;
+  width: 70%;
+  border: 1x solid #000066;
+  color: #000066;
+}
+
+
+button {
+  height: 2.25rem;
+  width:70%;
+  padding: 0.5rem;
+  background-color: #000066;
+  color: white;
+  border: 1px solid #000066;
+
+}
+
+#resultWindow {
+height: 2.25rem;
+display: inline-block;
+position: absolute;
+top:0;
+width: 30%;
+right: 7%;
+background-color: #add8e6;
+}
+
+#inputWindow {
+  width: 30%;
+  display: inline-block;
+  position: absolute;
+  left:5%;
+}
+
+#submitButton{
+  width: 30%;
+  display: inline-block;
+  position: absolute;
+  right: 36%;
+}
+h1 {
+  margin: 0;
 }

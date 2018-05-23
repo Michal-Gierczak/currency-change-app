@@ -1,13 +1,28 @@
 <div class="container">
-  <select [(ngModel)]="currencyOne">
-    <option *ngFor="let currencyOne of currenciesList" [value]="currencyOne.Id">{{ currencyOne.Name }}</option>
-  </select>
-  <select [(ngModel)]="currencyTwo">
-    <option *ngFor="let currencyTwo of currenciesList" [value]="currencyTwo.Id">{{ currencyTwo.Name }}</option>
-  </select>
-  <button (click)="countCurrency()">Convert</button>
-  <div>
-    <input type="Number" [(ngModel)]="inputValue"/>
-    <div id="score">{{score | number:'1.2-2'}}</div>
+
+  <h1>Currency Converter</h1>
+  <div class="currencySelectors">
+    <div class="selector">
+      <p>From:</p>
+      <select [(ngModel)]="currencyOne">
+        <option *ngFor="let currencyOne of currenciesList" [value]="currencyOne.Id">{{ currencyOne.Name }}</option>
+      </select>
+    </div>
+
+    <div class="selector">
+      <p>To:</p>
+      <select [(ngModel)]="currencyTwo">
+        <option *ngFor="let currencyTwo of currenciesList" [value]="currencyTwo.Id">{{ currencyTwo.Name }}</option>
+      </select>
+    </div>
+  </div>
+  <div class="results">
+    <div id="inputWindow">
+      <input type="Number" [(ngModel)]="inputValue"/>
+    </div>
+    <div id="submitButton">
+      <button (click)="countCurrency()">Convert</button>
+    </div>
+      <span id="resultWindow">{{score | number:'1.2-2'}}</span>
   </div>
 </div>
