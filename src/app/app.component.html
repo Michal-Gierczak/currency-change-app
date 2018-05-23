@@ -8,6 +8,6 @@
   <button (click)="countCurrency()">Convert</button>
   <div>
     <input type="Number" [(ngModel)]="inputValue"/>
-    <div id="score">{{score}}</div>
+    <div id="score">{{score | number:'1.2-2'}}</div>
   </div>
 </div>
